@@ -12,9 +12,9 @@ class WordCloudComponent extends Component {
             maxFont: 40,
             minFont: 10,
         };
-        this.handleFontSize = this.handleFontSize.bind(this);
     }
-    handleFontSize() {
+    
+    handleFontSize = () => {
             this.setState({
                 maxFont: this.props.maxFont ? this.props.maxFont : 40,
                 minFont: this.props.minFont ? this.props.minFont : 10,
